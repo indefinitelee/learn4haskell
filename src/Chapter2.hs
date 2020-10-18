@@ -136,7 +136,7 @@ functions in GHCi and insert the corresponding resulting output below:
 
 List of booleans:
 >>> :t [True, False]
-[True, False] :: Bool
+[True, False] :: [Bool]
 
 String is a list of characters:
 >>> :t "some string"
@@ -207,7 +207,7 @@ to guess first, what you will see.
 >>> take 5 "Hello, World!"
 "Hello"
 >>> drop 5 "Hello, World!"
-", World"
+", World!"
 >>> zip "abc" [1, 2, 3]  -- convert two lists to a single list of pairs
 [('a',1),('b',2),('c',3)]
 >>> words "Hello   Haskell     World!"  -- split the string into the list of words
@@ -908,8 +908,12 @@ and reverses it.
   function, but in this task, you need to implement it manually. No
   cheating!
 -}
-rewind = error "rewind: Not Implemented!"
-
+rewind :: [a] -> [a]
+rewind = error "rewind not implemented"
+--rewind (x:xs) = x : rewind xs
+-- since items are added to the front of a list thought this would work like
+-- 1: []
+-- 2: 
 
 {-
 You did it! Now it is time to the open pull request with your changes
