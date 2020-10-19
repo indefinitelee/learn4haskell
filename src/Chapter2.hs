@@ -340,7 +340,7 @@ subList :: Int -> Int -> [a] -> [a]
 subList x y lst
         | x < 0 = []
         | y < 0 = []
-        | otherwise = drop x (take y lst)
+        | otherwise = drop x (take (y+1) lst)
 
 {- |
 =⚔️= Task 4
@@ -892,7 +892,7 @@ list.
 rotate :: Int -> [a] -> [a]
 rotate i l 
         | i < 0 = [] 
-        | otherwise = drop i (take (length l + 1) (cycle l))
+        | otherwise = drop i (take (length l + i) (cycle l))
 -- drop index take index + length of cycle
 {- |
 =💣= Task 12*
