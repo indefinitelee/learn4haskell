@@ -892,7 +892,7 @@ list.
 rotate :: Int -> [a] -> [a]
 rotate i l 
         | i < 0 = [] 
-        | otherwise = drop i (take (length l + i) (cycle l))
+        | otherwise = drop i (take (length l + 1) (cycle l))
 -- drop index take index + length of cycle
 {- |
 =💣= Task 12*
