@@ -301,31 +301,43 @@ expressions in GHCi
   functions and operators first. Remember this from the previous task? ;)
 
 >>> 1 + 2
-INSERT THE RESULT INSTEAD OF THE TEXT
+<INSERT THE RESULT INSTEAD OF THE TEXT>
+
 >>> 10 - 15
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> 10 - (-5)  -- negative constants require ()
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> (3 + 5) < 10
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> True && False
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> 10 < 20 || 20 < 5
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> 2 ^ 10  -- power
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> not False
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> div 20 3  -- integral division
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> mod 20 3  -- integral division remainder
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> max 4 10
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> min 5 (max 1 2)
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 >>> max (min 1 10) (min 5 7)
-
+<INSERT THE RESULT INSTEAD OF THE TEXT>
 
 Because Haskell is a __statically-typed__ language, you see an error each time
 you try to mix values of different types in situations where you are not
@@ -604,7 +616,7 @@ You can define multiple functions inside __where__!
 Just remember to keep proper indentation.
 -}
 
-{-
+{- |
 =⚔️= Task 9
 
 Implement a function that returns the sum of the last two digits of a number.
@@ -613,7 +625,7 @@ Implement a function that returns the sum of the last two digits of a number.
 6
 >>> sumLast2 134
 7
->>> sumLast 1
+>>> sumLast2 1
 1
 
 Try to introduce variables in this task (either with let-in or where) to avoid
@@ -645,7 +657,7 @@ firstDigit n = error "firstDigit: Not implemented!"
 
 
 {-
-You did it! Now it is time to the open pull request with your changes
+You did it! Now it is time to open pull request with your changes
 and summon @vrom911 and @chshersh for the review!
 -}
 
